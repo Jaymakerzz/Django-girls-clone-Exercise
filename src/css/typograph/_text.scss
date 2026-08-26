@@ -1,0 +1,24 @@
+.heading__primary {
+  background-image: linear-gradient(
+    to right,
+    var(--color-primary-light),
+    var(--color-primary)
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  &--lg {
+    font-size: 4.35rem;
+    letter-spacing: 0.61rem;
+    font-weight: bolder;
+  }
+  &--sm {
+    font-size: 3.5rem;
+    letter-spacing: 0.7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+.main__text {
+  text-align: center;
+  width: 76%;
+}

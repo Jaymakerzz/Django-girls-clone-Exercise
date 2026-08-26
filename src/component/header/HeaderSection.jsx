@@ -18,8 +18,8 @@ class Header extends Component {
           </ul>
         </div>
         <div className="header__item header__item--btn">
-          <div className="btn">
-            <a href="#" className="btn__primary">
+          <div className="">
+            <a href="#" className="btn btn--orange">
               Join Community
             </a>
           </div>

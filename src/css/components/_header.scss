@@ -4,25 +4,25 @@
 
   &__item {
     padding: 1rem;
-
     &--logo {
-    }
-    &--links {
-    }
-
-    &--btn {
+      cursor: pointer;
     }
   }
 }
 .list {
   list-style: none;
+  margin-left: 20rem;
   &__item {
     display: inline-block;
-    margin-right: 1rem;
+    margin-right: 3rem;
   }
 }
 .nav:link,
-:visited {
+.nav:visited {
   text-decoration: none;
   color: inherit;
+}
+
+.nav:hover {
+  color: var(--color-primary);
 }

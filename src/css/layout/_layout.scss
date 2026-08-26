@@ -1,0 +1,10 @@
+.container--top {
+}
+.heading__section {
+  text-align: center;
+  &--item {
+    display: inline-block;
+    margin: 0 auto;
+    // width: 85%;
+  }
+}

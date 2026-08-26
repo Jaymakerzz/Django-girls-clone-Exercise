@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Header from "./../header/HeaderSection";
+import SectionTop from "./sectionTop";
 
 class Home extends Component {
   state = {
@@ -10,6 +11,9 @@ class Home extends Component {
     return (
       <div className="container">
         <Header links={links} />
+        <main>
+          <SectionTop />
+        </main>
       </div>
     );
   }

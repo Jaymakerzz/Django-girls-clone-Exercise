@@ -4,6 +4,9 @@
 @use "./css/abstract/mixins";
 
 @use "./css/layout/containerBox";
+@use "./css/layout/layout";
 
 @use "./css/components/header";
 @use "./css/components/button";
+
+@use "./css/typograph/text";
