@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    padding: 1rem;
+
+    &--logo {
+    }
+    &--links {
+    }
+
+    &--btn {
+    }
+  }
+}
+.list {
+  list-style: none;
+  &__item {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+}
+.nav:link,
+:visited {
+  text-decoration: none;
+  color: inherit;
+}

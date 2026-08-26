@@ -1,1 +1,9 @@
-@use "./css/base/base";
+@use "./css/base/baseStyles";
+
+@use "./css/abstract/functions";
+@use "./css/abstract/mixins";
+
+@use "./css/layout/containerBox";
+
+@use "./css/components/header";
+@use "./css/components/button";
