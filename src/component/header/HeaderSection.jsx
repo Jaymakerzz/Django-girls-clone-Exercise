@@ -5,7 +5,9 @@ class Header extends Component {
     const { links } = this.props;
     return (
       <header className="header">
-        <div className="header__item header__item--logo">Django Girls</div>
+        <div className="heading__primary header__item header__item--logo">
+          Django Girls
+        </div>
         <div className="header__item header__item--links">
           <ul className="list">
             {links.map((link) => (

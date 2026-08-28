@@ -5,12 +5,22 @@
     var(--color-primary)
   );
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
+  //   backface-visibility: hidden;
+  //   transition: all 0.3s;
+
   &--lg {
     font-size: 4.35rem;
     letter-spacing: 0.61rem;
     font-weight: bolder;
   }
+
+  //   &:hover {
+  //     transform: skewX(15deg) skewY(2deg) scale(1.01);
+  //     text-shadow: 0.5rem 4rem 6rem (var(--color-black), 1);
+  //   }
+
   &--sm {
     font-size: 3.5rem;
     letter-spacing: 0.7rem;
@@ -21,4 +31,20 @@
 .main__text {
   text-align: center;
   width: 76%;
+}
+
+.heading__secondary {
+  color: var(--color-white);
+  font-size: 3.4rem;
+}
+.heading__tertiary--small {
+  font-weight: 800;
+}
+
+.highlight__title {
+  line-height: 1.2;
+  color: var(--grey-dark-1);
+  &--decorate {
+    color: var(--color-primary);
+  }
 }

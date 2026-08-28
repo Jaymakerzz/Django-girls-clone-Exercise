@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Header from "./../header/HeaderSection";
 import SectionTop from "./sectionTop";
+import CardBox from "./cardBox";
+import Highlight from "./highlight";
 
 class Home extends Component {
   state = {
@@ -13,6 +15,8 @@ class Home extends Component {
         <Header links={links} />
         <main>
           <SectionTop />
+          <CardBox />
+          <Highlight />
         </main>
       </div>
     );

@@ -2,9 +2,11 @@
 
 @use "./css/abstract/functions";
 @use "./css/abstract/mixins";
+@use "./css/abstract/margin";
 
 @use "./css/layout/containerBox";
 @use "./css/layout/layout";
+@use "./css/components/component";
 
 @use "./css/components/header";
 @use "./css/components/button";

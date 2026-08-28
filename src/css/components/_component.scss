@@ -1,0 +1,42 @@
+.section__bar {
+  height: 1.8rem;
+  width: 7.6rem;
+  background-color: var(--color-primary);
+}
+
+.highlight__stats {
+  position: relative;
+  &--circle3 {
+    border: 1.6rem var(--color-primary) solid;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
+  }
+  &--circle2 {
+    border: 1.6rem var(--color-primary) solid;
+    border-right-color: transparent;
+    border-top-color: transparent;
+  }
+  &--circle1 {
+    border: 1.6rem var(--color-primary) solid;
+    border-right-color: transparent;
+  }
+}
+
+.highlight__circle {
+  height: 14rem;
+  width: 14rem;
+  border-radius: 50%;
+  &--top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &--back {
+    border: 1.6rem var(--color-primary-light-extra) solid;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
