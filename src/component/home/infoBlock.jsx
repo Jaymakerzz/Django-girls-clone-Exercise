@@ -45,11 +45,11 @@ class InfoBlock extends Component {
             </p>
             <ButtonMain color={"white"} />
           </div>
-          <div>
+          <div className="side__photo">
             <img
               src={butterfly}
               alt="Butterfly Image"
-              className="photo--round"
+              className="side__photo--round"
             />
           </div>
         </section>

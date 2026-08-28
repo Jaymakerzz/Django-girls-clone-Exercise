@@ -4,6 +4,7 @@ import SectionTop from "./sectionTop";
 import CardBox from "./cardBox";
 import Highlight from "./highlight";
 import InfoBlock from "./infoBlock";
+import Footer from "../footer/footer";
 
 class Home extends Component {
   render() {
@@ -16,6 +17,7 @@ class Home extends Component {
           <Highlight />
           <InfoBlock />
         </main>
+        <Footer />
       </div>
     );
   }

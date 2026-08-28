@@ -26,10 +26,8 @@ class CardBox extends Component {
                 ></use>
               </svg>
 
-              <h3 className="heading__tertiary--small">
-                Lorem ipsum dolor sit amet consectetur.
-              </h3>
-              <p>
+              <h3 className="heading__tertiary--small">Lorem ipsum dolor.</h3>
+              <p className="margin-top-small-exta">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Laudantium veniam consequuntur quasi ipsam animi beatae magnam
                 sunt pariatur excepturi quia.

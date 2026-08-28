@@ -42,7 +42,13 @@
 }
 ////////////////////////////
 /// Half circle Image
-.photo--round {
-  width: 100%;
-  height: 78%;
+.side__photo {
+  align-self: flex-end;
+  &--round {
+    display: block;
+    width: 34rem;
+    height: 29rem;
+    border-bottom-right-radius: 4rem;
+    border-top-left-radius: 40rem;
+  }
 }
