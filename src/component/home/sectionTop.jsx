@@ -29,7 +29,7 @@ class SectionTop extends Component {
 
         <div className="row margin-top-big">
           {img.map((img) => (
-            <figure className={`row__item row__item${img.id}`}>
+            <figure key={img.id} className={`row__item row__item${img.id}`}>
               <img
                 key={img.id}
                 src={img.photo}

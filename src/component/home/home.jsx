@@ -3,20 +3,18 @@ import Header from "./../header/HeaderSection";
 import SectionTop from "./sectionTop";
 import CardBox from "./cardBox";
 import Highlight from "./highlight";
+import InfoBlock from "./infoBlock";
 
 class Home extends Component {
-  state = {
-    links: ["Home", "Community", "Workshop", "Schedule"],
-  };
   render() {
-    const { links } = this.state;
     return (
       <div className="container">
-        <Header links={links} />
+        <Header />
         <main>
           <SectionTop />
           <CardBox />
           <Highlight />
+          <InfoBlock />
         </main>
       </div>
     );

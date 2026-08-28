@@ -21,6 +21,10 @@
     background: var(--color-primary);
     color: var(--color-white);
   }
+  &--white {
+    background: var(--color-white);
+    color: var(--grey-dark-1);
+  }
 }
 .btn::after {
   content: "";
@@ -33,12 +37,12 @@
   top: 0;
   left: 0;
 
-  transition: all 0.4s;
+  transition: all 0.3s;
 }
-.btn--orange::after {
-  background-color: var(--color-primary);
+.btn::after {
+  background-color: inherit;
 }
 .btn:hover::after {
-  transform: scaleX(1.3) scaleY(1.6);
+  transform: scaleX(1.34) scaleY(1.6);
   opacity: 0;
 }

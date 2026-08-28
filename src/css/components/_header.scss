@@ -16,8 +16,14 @@
   margin-left: 20rem;
 
   &__item {
-    display: inline-block;
-    margin-right: 3rem;
+    &--horizontal {
+      display: inline-block;
+      margin-right: 3rem;
+    }
+    &--vertical {
+      display: block;
+      margin-bottom: 3rem;
+    }
   }
 }
 .nav:link,
