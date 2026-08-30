@@ -69,6 +69,16 @@ const ScheduleTable = (props) => {
           </tbody>
         </table>
       </div>
+      <div className="warning">
+        <svg className="card__icon">
+          <use href={`${spritesvg}#icon-circle`} />
+        </svg>
+        <p className="header--info">
+          These two days are the Django Girls part of PyCon Tanzania 2026 (10-14
+          November). No prior coding needed. Bring a laptop and a coach will be
+          with you at every step.
+        </p>
+      </div>
     </div>
   );
 };

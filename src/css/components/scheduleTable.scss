@@ -21,6 +21,8 @@ table {
 .table {
   border-radius: 4rem;
   border: 1px var(--grey-light-3) solid;
+  margin-top: 3rem;
+
   &__header {
     padding: 2rem;
     display: flex;
@@ -81,4 +83,14 @@ table {
     margin-left: 0.9rem;
     opacity: 0.7;
   }
+}
+
+.warning {
+  display: flex;
+  margin: 2rem 0rem 6rem 0rem;
+  padding: 2.4rem;
+  gap: 1.4rem;
+  border-radius: 2rem;
+  justify-items: center;
+  background-color: var(--color-primary-light-transparent);
 }
