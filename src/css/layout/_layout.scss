@@ -116,6 +116,7 @@
   flex: 0 0 66%;
   margin-left: 4rem;
 }
+
 .section__bottom {
   height: 36rem;
   border-radius: 4rem;
@@ -125,4 +126,71 @@
     var(--color-primary-light),
     var(--color-primary-dark)
   );
+}
+
+//////////////////////////////////////////
+///
+/// long Buttons
+
+.btn {
+  &__pagenate {
+    display: flex;
+    justify-content: space-between;
+    &--primary {
+      flex: 0 0 49%;
+      height: 10rem;
+      display: flex;
+      border: 1px var(--grey-light-2) solid;
+      border-radius: 2rem;
+      padding: 0.8rem 1rem;
+      background-color: var(--grey-light-1);
+      transition: all 0.3s;
+
+      &:hover {
+        transform: translateY(-0.25rem) scale(1.005);
+        box-shadow: 0 1rem 1.5rem var(--color-primary-light-transparent-2);
+      }
+
+      &:active {
+        transform: translateY(-0.1rem) scale(1.001);
+        box-shadow: 0 0.4rem 1rem var(--color-primary-light-transparent-2);
+      }
+    }
+  }
+  &__heading {
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+  }
+  &__info {
+    backface-visibility: hidden;
+    margin: auto 0.8rem;
+    &--text {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+  }
+}
+.number--large {
+  margin-left: auto;
+
+  font-size: 7.6rem;
+  opacity: 0.4;
+
+  color: var(--color-primary-light-extra);
+}
+
+///////////////////////////////////
+/// Conitional button
+
+.gradient-active {
+  background-image: linear-gradient(
+    to right,
+    var(--color-primary-light),
+    var(--color-primary-dark)
+  );
+}
+.white-active {
+  color: var(--color-white);
 }

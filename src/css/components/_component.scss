@@ -52,3 +52,11 @@
     border-top-left-radius: 40rem;
   }
 }
+
+.bar__small--round {
+  width: 6rem;
+  height: 0.8rem;
+  border-radius: 5rem;
+  margin: 6rem 1rem 2rem;
+  background-color: var(--color-primary);
+}

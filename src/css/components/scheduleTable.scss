@@ -1,0 +1,84 @@
+table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+
+  th {
+    padding: 1rem;
+  }
+  td {
+    padding: 1.8rem 0;
+  }
+  tr {
+    border-bottom: var(--grey-light-4);
+
+    &:hover td {
+      background-color: var(--color-primary-light-transparent);
+      cursor: pointer;
+    }
+  }
+}
+.table {
+  border-radius: 4rem;
+  border: 1px var(--grey-light-3) solid;
+  &__header {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+
+    &--title {
+    }
+  }
+  &__description {
+    color: var(--color-white);
+    font-size: 1.4rem;
+    text-align: left;
+
+    background-image: linear-gradient(
+      to right,
+      var(--color-primary),
+      var(--color-primary-light)
+    );
+  }
+}
+.session {
+  text-align: center;
+  margin-left: auto;
+  color: var(--color-primary);
+  padding: 0.65rem 1.4rem;
+  border-radius: 5rem;
+  background-color: var(--color-primary-light-transparent);
+  &__title {
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+  }
+}
+.header--info {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-top: 0.4rem;
+  opacity: 0.7;
+}
+.track {
+  display: inline-block;
+  font-weight: 600;
+  border-radius: 0.6rem;
+  padding: 0.4rem 2rem;
+  background-color: var(--grey-light-4);
+
+  &__Workshop {
+    color: var(--color-primary);
+    background-color: var(--color-primary-light-transparent);
+  }
+}
+
+.time {
+  color: var(--color-primary);
+  font-size: 2rem;
+  font-weight: 500;
+  &__format {
+    font-size: 1.2rem;
+    margin-left: 0.9rem;
+    opacity: 0.7;
+  }
+}

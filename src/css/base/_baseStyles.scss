@@ -2,7 +2,9 @@
   --color-primary: #ed8f37;
   --color-primary-light: #e09d5d;
   --color-primary-light-extra: #d3b598;
-  --color-primary-dark: #925822;
+  --color-primary-light-transparent: #d3b2981f;
+  --color-primary-light-transparent-2: #d3af9867;
+  --color-primary-dark: #ca803ada;
 
   --grey-light-1: #faf9f9;
   --grey-light-2: #f4f2f2;
@@ -15,6 +17,7 @@
 
   --color-white: whitesmoke;
   --color-black: #222222;
+  --color-black-transparent: #33333360;
 }
 
 html {
@@ -36,7 +39,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   padding: 3rem;
   line-height: 1.4;
-  font-weight: bold;
+  font-weight: 400;
   font-size: 1.8rem;
   color: var(--grey-dark-1);
 }

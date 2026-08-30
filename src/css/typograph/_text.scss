@@ -48,3 +48,35 @@
     color: var(--color-primary);
   }
 }
+
+//////////////////////////////////////////////////////
+/// schedule
+.program {
+  color: var(--color-primary);
+  font-weight: 500;
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  background-color: var(--color-primary-light-transparent);
+  border-radius: 8rem;
+}
+.small-circle {
+  margin-bottom: 0.2rem;
+  text-align: center;
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+}
+
+.heading {
+  //////////////////////////////////////////////////////
+  /// schedule
+  &__headerCard {
+    font-size: 5.4rem;
+    font-weight: 800;
+  }
+}
+.headercard__paragraph {
+  width: 60%;
+}

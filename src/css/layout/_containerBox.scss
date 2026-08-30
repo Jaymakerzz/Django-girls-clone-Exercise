@@ -1,7 +1,11 @@
 .container {
   max-width: 100vw;
-
   margin: 0 auto;
+
+  &__schedule {
+    width: 85%;
+    margin: 0 auto;
+  }
 }
 .section__card {
   position: relative;
@@ -38,9 +42,13 @@
 
   &__icon {
     fill: var(--color-primary);
-    width: 4rem;
-    height: 4rem;
-    margin-bottom: 1rem;
+    width: 3rem;
+    height: 3rem;
+
+    &--schedule {
+      width: 1.7rem;
+      height: 1.7rem;
+    }
   }
 }
 /////////////////////////////////////////////////
@@ -115,7 +123,7 @@
 /// Footer styling
 .footer {
   margin-top: 4rem;
-  background-color: rgba($color: #d3b598, $alpha: 0.2);
+  background-color: var(--color-primary-light-transparent);
 
   padding: 1rem;
 }
@@ -130,6 +138,29 @@
     margin: auto;
     margin-top: 8rem;
     width: 90%;
-    border: 0.001rem var(--grey-dark-2) solid;
+    border: 1px var(--grey-light-4) solid;
   }
+}
+
+///////////////////////////
+/// hearcard
+.headerCard {
+  background-image: linear-gradient(
+    to right,
+    #fff,
+    var(--color-primary-light-transparent)
+  );
+  padding: 1rem 6rem;
+}
+.items {
+  display: flex;
+  gap: 0.8rem;
+  justify-items: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.item__data {
+  display: flex;
+  justify-items: center;
+  gap: 0.5rem;
 }
