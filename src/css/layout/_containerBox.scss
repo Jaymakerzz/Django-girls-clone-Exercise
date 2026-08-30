@@ -164,3 +164,13 @@
   justify-items: center;
   gap: 0.5rem;
 }
+
+///////////////////////
+/// section bar
+.section__bar--small {
+  width: 3.8rem;
+  height: 1.8rem;
+
+  margin: 1rem 0 2rem 0;
+  background-color: var(--color-primary);
+}

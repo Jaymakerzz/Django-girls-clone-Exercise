@@ -1,0 +1,18 @@
+.caption {
+  margin: 3rem 0 13rem 0;
+  display: flex;
+
+  justify-content: space-between;
+  &__item {
+    flex: 0 0 48%;
+
+    &--right {
+      order: -1;
+    }
+  }
+
+  &__paragraph {
+    font-weight: 500;
+    font-size: 2.2rem;
+  }
+}

@@ -15,9 +15,11 @@ class Workshop extends Component {
         "Join our free, beginner-friendly workshops and start building real web applications with guidance from supportive mentors",
     },
     Workshop: getCard(),
+    side1: "left",
+    side2: "right",
   };
   render() {
-    const { imgCard, Workshop } = this.state;
+    const { imgCard, Workshop, side1, side2 } = this.state;
 
     return (
       <div>
@@ -28,7 +30,9 @@ class Workshop extends Component {
         <h3 className="heading__secondary highlight__title margin-top-small-exta">
           What to Expect
         </h3>
-        <InfoImageBlock />
+        <InfoImageBlock side={side1} />
+        <InfoImageBlock side={side2} />
+        <InfoImageBlock side={side1} />
       </div>
     );
   }
