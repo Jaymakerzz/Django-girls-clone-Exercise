@@ -1,0 +1,85 @@
+.img__card {
+  height: 95vh;
+  width: 100%;
+  color: var(--color-white);
+  border-radius: 4rem;
+
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &--1 {
+    background-image: url(../../assets/pictures/forest-road.jpg);
+  }
+  &--2 {
+    background-image: url(../../assets/pictures/sunflower.jpg);
+  }
+}
+.img__items {
+  text-align: center;
+  width: 50%;
+  &:not(:last-child) {
+    margin-bottom: 0.6rem;
+  }
+}
+
+.img__heading {
+}
+.img__subheading {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.img__message {
+  font-size: 2.4rem;
+  letter-spacing: 0.15rem;
+}
+
+//////////////////////////////////////////////////////
+/// workshop card
+.workshop__card--container {
+  display: flex;
+  justify-content: space-between;
+}
+.workshop {
+  &__card {
+    flex: 0 0 32.5%;
+
+    text-align: center;
+    border: 1px var(--grey-light-4) solid;
+    border-radius: 3rem;
+    overflow: hidden;
+    box-shadow: 0.3rem 0.6rem 0.8rem var(--color-black-transparent);
+    *:not(:first-child) {
+      padding: 0 0.8rem;
+      margin-top: 1rem;
+    }
+  }
+  &__img img {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 2.15rem;
+  }
+  &__message,
+  &__date,
+  &__location {
+    font-weight: 400;
+  }
+
+  &__icon {
+    height: 2.4rem;
+    width: 2.4rem;
+    fill: var(--color-primary);
+  }
+  &__location,
+  &__date {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+}
