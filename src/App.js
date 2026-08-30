@@ -1,3 +1,4 @@
+import Community from "./component/community/community";
 import Footer from "./component/footer/footer";
 import Header from "./component/header/HeaderSection";
 import Home from "./component/home/home";
@@ -10,7 +11,8 @@ const App = () => {
       <Header />
       {/* <Home /> */}
       {/* <Schedule /> */}
-      <Workshop />
+      {/* <Workshop /> */}
+      <Community />
       <Footer />
     </div>
   );
