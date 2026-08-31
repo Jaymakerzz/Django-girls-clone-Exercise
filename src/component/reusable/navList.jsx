@@ -1,24 +1,37 @@
-import React from "react";
+import React, { Component } from "react";
+import { Link, NavLink } from "react-router-dom";
 
-const NavList = (props) => {
-  const links = [
-    { name: "Home", url: "#" },
-    { name: "Community", url: "#" },
-    { name: "Workshop", url: "#" },
-    { name: "Schedule", url: "#" },
-  ];
-  const { direction } = props;
-  return (
-    <ul className="list">
-      {links.map((link) => (
-        <li key={link.name} className={`list__item--${direction}`}>
-          <a href={link.url} className="nav nav__link">
-            {link.name}
-          </a>
-        </li>
-      ))}
-    </ul>
-  );
-};
+class NavList extends Component {
+  state = {
+    links: [
+      { name: "Home", url: "/" },
+      { name: "Community", url: "/community" },
+      { name: "Workshop", url: "/workshop" },
+      { name: "Schedule", url: "/schedule" },
+    ],
+  };
+
+  render() {
+    const { direction } = this.props;
+    const { links, currentLink } = this.state;
+    return (
+      <ul className="list">
+        {links.map((link) => (
+          <li key={link.name} className={`list__item--${direction}`}>
+            <NavLink
+              to={link.url}
+              onClick={() => window.scrollTo(0, 0)}
+              className={({ isActive }) =>
+                isActive ? "nav nav__active" : "nav"
+              }
+            >
+              {link.name}
+            </NavLink>
+          </li>
+        ))}
+      </ul>
+    );
+  }
+}
 
 export default NavList;

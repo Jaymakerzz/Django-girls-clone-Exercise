@@ -1,3 +1,4 @@
+import { Route, Routes } from "react-router-dom";
 import Community from "./component/community/community";
 import Footer from "./component/footer/footer";
 import Header from "./component/header/HeaderSection";
@@ -9,10 +10,14 @@ const App = () => {
   return (
     <div className="container">
       <Header />
-      {/* <Home /> */}
-      {/* <Schedule /> */}
-      {/* <Workshop /> */}
-      <Community />
+
+      <Routes>
+        <Route path="/community" Component={Community} />
+        <Route path="/schedule" Component={Schedule} />
+        <Route path="/workshop" Component={Workshop} />
+        <Route path="/" Component={Home} />
+      </Routes>
+
       <Footer />
     </div>
   );

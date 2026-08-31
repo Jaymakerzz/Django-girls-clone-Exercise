@@ -10,7 +10,7 @@ table {
     padding: 1.8rem 0;
   }
   tr {
-    border-bottom: var(--grey-light-4);
+    border-bottom: 1px var(--grey-light-4) solid;
 
     &:hover td {
       background-color: var(--color-primary-light-transparent);
