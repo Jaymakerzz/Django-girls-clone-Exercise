@@ -4,12 +4,6 @@ import spritesvg from "../../assets/icons/spritesvg.svg";
 
 const ScheduleTable = (props) => {
   const { events, eventCount, onPageChange, currentPage } = props;
-  let heading = "Day 2, Build & deploy";
-  let message = "Wednesday 11 November · views, data, forms & going live";
-  if (currentPage === 1) {
-    heading = "Day 2, Build & deploy";
-    message = "Wednesday 11 November · views, data, forms & going live";
-  }
   return (
     <div>
       <div className="bar__small--round"></div>
@@ -44,6 +38,13 @@ const ScheduleTable = (props) => {
             {events.map((event) => (
               <tr key={event.session} style={{ padding: "2rem" }}>
                 <td style={{ padding: "0 4rem" }}>
+                  <span
+                    className={
+                      event.track === "Workshop"
+                        ? "bar__primary bar__primary--orange"
+                        : "bar__primary bar__primary--gray"
+                    }
+                  ></span>
                   <span className="time">{event.time}</span>
                   <p className="time__format">EST</p>
                 </td>

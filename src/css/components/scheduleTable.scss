@@ -7,7 +7,8 @@ table {
     padding: 1rem;
   }
   td {
-    padding: 1.8rem 0;
+    padding: 1.4rem 0;
+    position: relative;
   }
   tr {
     border-bottom: 1px var(--grey-light-4) solid;
@@ -18,10 +19,27 @@ table {
     }
   }
 }
+.bar__primary {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  height: 100%;
+  width: 4.6px;
+
+  &--orange {
+    background-color: var(--color-primary);
+  }
+  &--gray {
+    background-color: var(--grey-light-4);
+  }
+}
 .table {
   border-radius: 4rem;
   border: 1px var(--grey-light-3) solid;
   margin-top: 3rem;
+  overflow: hidden;
 
   &__header {
     padding: 2rem;
