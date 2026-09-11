@@ -8,7 +8,7 @@ class Header extends Component {
       <div className="header__container">
         <header className="header">
           <div className="heading__primary header__item header__item--logo">
-            Django Girls
+            <img src="/djnew.webp" alt="Django Girls" />
           </div>
           <div className="header__item header__item--links">
             <NavList direction={"horizontal"} />
