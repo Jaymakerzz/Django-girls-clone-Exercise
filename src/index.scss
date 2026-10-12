@@ -1,7 +1,6 @@
 @use "./css/base/baseStyles";
 
-@use "./css/abstract/functions";
-@use "./css/abstract/mixins";
+
 @use "./css/abstract/margin";
 
 @use "./css/layout/containerBox";
@@ -15,3 +14,5 @@
 @use "./css/components/infoBlock.scss";
 
 @use "./css/typograph/text";
+
+@use "./css/responsive.scss"

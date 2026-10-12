@@ -8,6 +8,7 @@
 }
 .row {
   display: flex;
+  margin-top: 4rem;
   justify-content: space-between;
   width: 100%;
 
@@ -118,7 +119,6 @@
 }
 
 .section__bottom {
-  height: 36rem;
   border-radius: 4rem;
   color: white;
   background-image: linear-gradient(
